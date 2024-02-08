@@ -44,7 +44,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.LAWVCommon',
-      version='1.0.4',
+      version='1.0.5',
       description=('A docassemble extension for LAWV information used across multiple interviews'),
       long_description='Common information, CSS, and classes used across multiple interviews to retain data consistency for LAWV',
       long_description_content_type='text/markdown',

@@ -1,6 +1,6 @@
 import os
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 from fnmatch import fnmatchcase
 from distutils.util import convert_path
 
@@ -44,7 +44,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.LAWVCommon',
-      version='1.0.12',
+      version='1.0.13',
       description=('A docassemble extension for LAWV information used across multiple interviews'),
       long_description='Common information, CSS, and classes used across multiple interviews to retain data consistency for LAWV',
       long_description_content_type='text/markdown',
@@ -52,8 +52,7 @@ setup(name='docassemble.LAWVCommon',
       author_email='dhenry@lawv.net',
       license='The MIT License (MIT)',
       url='https://docassemble.org',
-      packages=find_packages(),
-      namespace_packages=['docassemble'],
+      packages=find_namespace_packages(),
       install_requires=[],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/LAWVCommon/', package='docassemble.LAWVCommon'),
